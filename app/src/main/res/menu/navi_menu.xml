@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_category"
+        android:title="작품 분류"
+        />
+
+    <item
+        android:id="@+id/item_artistInfo"
+        android:title="아티스트 정보"
+        />
+
+    <item
+        android:id="@+id/item_notice"
+        android:title="공지사항"
+        />
+
+    <item
+        android:id="@+id/item_qna"
+        android:title="QnA"
+        />
+
+    <item
+        android:id="@+id/item_addItem"
+        android:title="작품 등록"
+        />
+
+</menu>

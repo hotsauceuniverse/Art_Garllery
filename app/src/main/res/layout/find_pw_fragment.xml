@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".IdFragment"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:layout_marginTop="200dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="아이디를 입력하세요."
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            >
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="핸드폰 번호입력 (' - ' 제외)"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/solid_button"
+                android:backgroundTint="#8BC34A"
+                android:text="인증번호 전송"
+                android:textSize="19dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:hint="인증번호 입력"
+                android:textColorHint="#808080"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/solid_button"
+                android:backgroundTint="#8BC34A"
+                android:text="확인"
+                android:textSize="19dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:background="@drawable/solid_button"
+            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="30dp"
+            android:text="비밀번호 찾기"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
