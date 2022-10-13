@@ -1,6 +1,7 @@
 package com.example.art_gallery;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -11,10 +12,12 @@ import android.text.style.StyleSpan;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.SearchView;
+import android.view.SubMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -29,6 +32,8 @@ public class ArtMain extends AppCompatActivity {
     NavigationView navigationView;
 
     TextView title_text;
+
+    ActionBarDrawerToggle mDrawerToggle;
 
     @Override
     protected void onCreate(Bundle saveInstanceState) {
@@ -58,7 +63,9 @@ public class ArtMain extends AppCompatActivity {
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.navigation_view);
+
     }
+
 
     // chat, search Icon 우측상단 노출
     @Override
@@ -92,7 +99,6 @@ public class ArtMain extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     @Override
     public void onBackPressed() { // 뒤로가기 했을 때
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
@@ -102,3 +108,6 @@ public class ArtMain extends AppCompatActivity {
         }
     }
 }
+
+
+// chat 버튼 탭 시, 상단 그대로 하단 화면만 fragment 구현
